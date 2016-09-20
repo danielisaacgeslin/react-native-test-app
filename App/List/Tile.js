@@ -13,10 +13,8 @@ export default class Tile extends Component {
   render() {
     return (
       <View>
-        <Text style={styles.title}>{this.props.movie.title}</Text>
-        <Text style={styles.description}>{this.props.movie.description}</Text>
         <TouchableHighlight onPress={this.goToMovie.bind(this)}>
-          <Text>Details</Text>
+          <Text style={styles.title}>- {this.props.movie.title}</Text>
         </TouchableHighlight>
       </View>
     );
@@ -25,13 +23,10 @@ export default class Tile extends Component {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 22,
-    textAlign: 'center',
+    fontSize: 20,
+    textAlign: 'left',
     color: 'red',
-  },
-  description: {
-    fontSize: 17,
-    textAlign: 'center',
-    marginBottom: 35,
+    margin: 15,
+    marginTop: 0
   }
 });

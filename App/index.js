@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import {
   StyleSheet,
-  Navigator
+  Navigator,
+  View,
+  Text
 } from 'react-native';
 import Movies from './Movies';
 import Details from './Details';
