@@ -14,6 +14,7 @@ export default class List extends Component {
     return (
       <View>
         <ListView
+          enableEmptySections={true}
           dataSource={dataSource}
           renderRow={(rowData)=>
               <Tile navigator={this.props.navigator} movie={rowData}></Tile>
